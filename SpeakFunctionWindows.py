@@ -8,4 +8,5 @@ speak = wincl.Dispatch("SAPI.SpVoice")
 l = ["Rahul", "Nishant", "Harry"]
 
 # Use the Speak method to vocalize each string in the list
-speak.Speak(l)
+for item in l:
+  speak.Speak(f"Hello {item}")
